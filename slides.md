@@ -11,7 +11,7 @@
 Firefox Accounts is a system that gives you a single way to sign into all
 Mozilla services on Firefox and FirefoxOS.
 
-- Tracking Bug: 920135 
+- Tracking Bug: 920135 (includes user stories)
 - For 1.3: DOM API for Sign-in, sign-out (Marketplace, WheresMyFox)
 - For 1.4: Attached services (Sync)
 
@@ -42,8 +42,9 @@ For 1.3, we are targeting:
 
 - DOM API for sign-in
 
-    navigator.id.watch({wantIssuer: "firefox-accounts"});
-    navigator.id.request();
+      `navigator.id.watch({wantIssuer: "firefox-accounts"});`
+
+      `navigator.id.request();` &rarr; assertion
 
 - IAC API for certified apps (FTE, Settings)
 
@@ -60,20 +61,25 @@ For 1.4 and beyond:
 
 - [https://wiki.mozilla.org/Identity/Firefox-Accounts](https://wiki.mozilla.org/Identity/Firefox-Accounts)
 - [https://mail.mozilla.org/listinfo/dev-fxacct](https://mail.mozilla.org/listinfo/dev-fxacct)
+- IRC: `#fxa`
+- Bugzilla: 920135
 
 ## People
 
-In addition to everyone on in Identity and FirefoxOS who have helped out:
+In addition to everyone on in Identity, DevOps, QA, and FirefoxOS teams who are helping,
+these folks are good contacts if you have questions:
 
-- Borja Salguero (dev)
-- Fernando Moreno (dev)
-- Francisco Jordano (dev)
-- Jed Parsons (dev)
-- John Gruen (UX)
-- Olav Nymoen (dev)
-- Ryan Feeley (UX)
-- Sam Penrose (dev)
-- Sergi Mansilla (dev)
-- Shane Tomlinson (dev)
-- Zach Carter (dev)
+- Borja Salguero `borja` (dev)
+- Edwin Wong `edwong` (QA)
+- Fernando Moreno `ferjm` (dev)
+- Francisco Jordano `francisco` (dev)
+- James Bonacci `jbonacci` (QA)
+- Jed Parsons `jedp` (dev)
+- John Gruen `jgruen` (UX)
+- Olav Nymoen `olavnymoen` (dev)
+- Ryan Feeley `rfeeley` (UX)
+- Sam Penrose `spenrose` (dev)
+- Sergi Mansilla `sergi` (dev)
+- Shane Tomlinson `stomlinson` (dev)
+- Zach Carter `zcarter` (dev)
 
