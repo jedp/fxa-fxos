@@ -11,64 +11,56 @@ we're thinking hard about 1.4 and beyond
 ## What is Firefox Accounts
 
 Firefox Accounts is a system that gives you a single way to sign into all
-Mozilla services on Firefox and FirefoxOS
-- marketplace
-- wheresmyfox
-- sync
-- etc
+Mozilla services on Firefox and FirefoxOS.
 
-show me?
-sign in on device
-settings app
+- Tracking Bug: 920135 
+- For 1.3: Sign-in, sign-out (Marketplace, WheresMyFox)
+- For 1.4: Attached services (Sync)
+
+## What Will The User See?
+
+- UX for flows: Bug 897600 (attachment)
+- FTE flow: https://www.youtube.com/watch?v=ZjSUN7SAEmw
+
+## Some Questions You Might Have
+
+- Do I have to create a Firefox Account to use Firefox?
+- How do I sign up or sign in?
+- Why not Persona? What' the difference?
+- Can I use Persona to sign in?
+- Are we creating another silo?
+- What information will it store about the user?
+- Can I put my application or service's data in Firefox Accounts?
+- Can I use it to sign into non-Mozilla services?
+- Does it provide email?
+- What services will it enable?
+
+crazy ideas for the future: https://wiki.mozilla.org/User:Dria/PiCL_Future_Ideas
 
 ## Current Status, Future Plans
 
-now:
-very simple - sign-in for 1.3
+For 1.3, we are targeting:
+- DOM API for sign-in
 
-next:
-more awesome: sync
+    navigator.id.watch({wantIssuer: "firefox-accounts"});
+    navigator.id.request();
 
-on the horizon:
-a way for third-party services to participate (e.g., contacts sync)
-a way for third-party non-certified apps to participate (sign-in request)
+- IAC API for certified apps (FTE, Settings)
 
-## Why Are We Doing This?
+For 1.4 and beyond:
 
-why build this when we have persona? a sign-in system - not an account system
-fxa - a place to persist user data and sign in
-
-is it a silo?  i hate silos!
-no.  it provides convenience for firefox users
-but user maintains control over own data
-this is a way to provide access to services
-not to own the user
-
-deeper info
+- a way for third-party services to participate (e.g., contacts sync service)
+- a way for third-party non-certified apps to participate (sign-in request)
 
 ## When Is This Happening
  
 - version 1.3 of fxos for accounts sign-in (wmf, mkt)
 - version 1.4 for deeper features (sync, keys, etc)
 
-architecture
-bugs
-roadmap
+## Architectural Overview
 
-## What Can I Do With Firefox Accounts?
-
-two parts to this queston
-1. what is stored in the fxa database
-2. what services can fxa enable?
-
-hwat goes in fxa - not much 
-    - some keys
-    - an email
-
-in the (near) future -
-additional services that need data (contacts, bookmarks, notes, etc)
-will run their own services to store and manage that data
-we will provide a template for doing this
+- Tracking bug: 
+- img/architecture.png
 
 ## How Do I Use It?
 
@@ -83,4 +75,8 @@ with one additon:
 ? how do i logout?
 
 
+## Where Can I Learn More
+
+FAQ
+Wiki
 
