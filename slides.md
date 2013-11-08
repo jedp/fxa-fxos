@@ -11,9 +11,15 @@
 Firefox Accounts is a system that gives you a single way to sign into all
 Mozilla services on Firefox and FirefoxOS.
 
-- Tracking Bug: 920135 (includes user stories)
-- For 1.3: DOM API for Sign-in, sign-out (Marketplace, WheresMyFox)
-- For 1.4: Attached services (Sync)
+Tracking Bug: 920135 (includes user stories)
+
+For 1.3: 
+
+- Sign into device on FTU
+- Account management in Settings
+- Sign-in DOM API for RPs (Marketplace, WheresMyFox)
+
+For 1.4: Attached services (Sync) and moar awesomeness
 
 ## What Will The User See?
 
@@ -81,5 +87,6 @@ these folks are good contacts if you have questions:
 - Sam Penrose `spenrose` (dev)
 - Sergi Mansilla `sergi` (dev)
 - Shane Tomlinson `stomlinson` (dev)
+- Tauni Oxborrow `toxborrow` (PM)
 - Zach Carter `zcarter` (dev)
 
