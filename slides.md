@@ -59,6 +59,10 @@ For 1.4 and beyond:
 - a way for third-party services to participate (e.g., contacts sync service)
 - a way for third-party non-certified apps to participate (sign-in request)
 
+## Relying Party Flows
+
+![RP Flows](/Users/zeus/code/fxa-fxos/img/rp-flows.png "Relying Party Flows")
+
 ## Architectural Overview
 
 ![Architecture](/Users/zeus/code/fxa-fxos/img/architecture.png "FirefoxOS Architecture")
